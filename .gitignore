@@ -1,6 +1,6 @@
 .DS_Store
-UglifyJS
-node_modules
+#UglifyJS
+#node_modules
 
 .idea/
 *.iml
