@@ -53,6 +53,19 @@
 <!-- MAIN CONTENT -->
 <div id="main_content_wrap" class="outer">
     <section id="main_content" class="inner">
+        <h3>Here are the projects I am actively working on with their latest release version, available in Maven Central.</h3>
+
+        <ul>
+            <li><a href="http://adamcin.net/net.adamcin.recap/">Recap - rsync for Adobe Granite (soon to be released!)</a></li>
+            <li><a href="http://adamcin.net/scalamojo-maven-plugin/">Scala Mojo Maven Plugin (version 0.8.0)</a></li>
+            <li><a href="http://adamcin.net/vltpack-maven-plugin/">VLT Pack Maven Plugin (version 0.8.0)</a></li>
+            <li><a href="http://adamcin.net/snagjar-maven-plugin/">Snag Jar Maven Plugin (version 0.8.0)</a></li>
+            <li><a href="http://adamcin.net/net.adamcin.commons.jcr/">net.adamcin.commons.jcr (version 0.6.0)</a></li>
+            <li><a href="http://adamcin.net/net.adamcin.commons.slingjunit/">net.adamcin.commons.slingjunit (version 0.8.0)</a></li>
+        </ul>
+
+        <h3>About adamcin.net</h3>
+
         <p>I've been a Java programmer since January 2007, when I started at <a href="http://www.acquitygroup.com">Acquity Group</a>. Even though I am still a Java developer at my day job, I recently started programming seriously in Scala in September 2012 when I enrolled in Martin Odersky's online course, <a href="https://www.coursera.org/course/progfun">Functional Programming Principles in Scala</a>. After completing the course (<a href="http://adamcin.net/files/progfun_certificate.pdf">with distinction</a>), I was inspired to hit the ground running by switching over to scala immediately on all my personal projects.</p>
 
         <p>To get the ball rolling, I figured I'd start by recreating any incompatible link in the Java- and Maven-based toolchain that I use for development of Adobe CQ5 in order to support future development in Scala:</p>
@@ -65,53 +78,11 @@
             <li>
                 <a href="http://felix.apache.org/site/apache-felix-maven-scr-plugin.html">maven-scr-plugin</a> (works with Scala projects as of version 1.9.0; see <a href="https://issues.apache.org/jira/browse/FELIX-2892">FELIX-2892</a>)</li>
             <li>adept-maven-plugin (not incompatible with scala, but also not public; superseded by <a href="https://github.com/adamcin/vltpack-maven-plugin/">vltpack-maven-plugin </a> and <a href="https://github.com/adamcin/snagjar-maven-plugin/">snagjar-maven-plugin</a>)</li>
-        </ul><p>I intend to make all the projects I produce under this initiative available on <a href="https://oss.sonatype.org/index.html">Sonatype's open source repository</a> with generated site documentation hosted on my <a href="https://github.com/adamcin/">adamcin GitHub profile</a>.</p>
-
-        <h3>Here are some links to get this party started.</h3>
-
-        <ul>
-            <li><a href="http://adamcin.net/scalamojo-maven-plugin/">Scala Mojo Maven Plugin</a></li>
-            <li><a href="http://adamcin.net/vltpack-maven-plugin/">VLT Pack Maven Plugin</a></li>
-            <li><a href="http://adamcin.net/snagjar-maven-plugin/">Snag Jar Maven Plugin</a></li>
         </ul>
 
-<pre><code>
-&lt;profile&gt;
-    &lt;id&gt;sonatype-oss&lt;/id&gt;
-    &lt;repositories&gt;
-        &lt;repository&gt;
-            &lt;snapshots&gt;
-                &lt;enabled&gt;false&lt;/enabled&gt;
-            &lt;/snapshots&gt;
-            &lt;id&gt;sonatype-oss&lt;/id&gt;
-            &lt;url&gt;https://oss.sonatype.org/content/repositories/releases/&lt;/url&gt;
-        &lt;/repository&gt;
-        &lt;repository&gt;
-            &lt;snapshots&gt;
-                &lt;enabled&gt;true&lt;/enabled&gt;
-            &lt;/snapshots&gt;
-            &lt;id&gt;sonatype-nexus-snapshots&lt;/id&gt;
-            &lt;url&gt;https://oss.sonatype.org/content/repositories/snapshots/&lt;/url&gt;
-        &lt;/repository&gt;
-    &lt;/repositories&gt;
-    &lt;pluginRepositories&gt;
-        &lt;pluginRepository&gt;
-            &lt;snapshots&gt;
-                &lt;enabled&gt;false&lt;/enabled&gt;
-            &lt;/snapshots&gt;
-            &lt;id&gt;sonatype-oss&lt;/id&gt;
-            &lt;url&gt;https://oss.sonatype.org/content/repositories/releases/&lt;/url&gt;
-        &lt;/pluginRepository&gt;
-        &lt;pluginRepository&gt;
-            &lt;snapshots&gt;
-                &lt;enabled&gt;true&lt;/enabled&gt;
-            &lt;/snapshots&gt;
-            &lt;id&gt;sonatype-nexus-snapshots&lt;/id&gt;
-            &lt;url&gt;https://oss.sonatype.org/content/repositories/snapshots/&lt;/url&gt;
-        &lt;/pluginRepository&gt;
-    &lt;/pluginRepositories&gt;
-&lt;/profile&gt;
-</code></pre>
+        <p>I intend to make all the projects I produce under this initiative available in Maven Central via
+            <a href="https://oss.sonatype.org/index.html">Sonatype's open source repository</a> with generated site
+            documentation hosted on my <a href="https://github.com/adamcin/">adamcin GitHub profile</a>.</p>
 
     </section>
 </div>
